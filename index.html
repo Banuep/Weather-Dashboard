@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Error toast -->
+  <div class="toast" id="toast"></div>
+
+  <div class="app">
+
+    <header>
+      <div class="brand">
+        <h1>Weather Dashboard</h1>
+      </div>
+      <div class="search-wrapper">
+        <input type="text" id="cityInput" placeholder="Tambah kota...">
+        <button class="btn-add" id="addBtn">＋ Tambah Kota</button>
+      </div>
+    </header>
+
+    <div class="stats-bar" id="statsBar">
+      <div class="stat-pill">Kota aktif: <span id="statCount">0</span></div>
+      <div class="stat-pill">Diperbarui: <span id="statUpdated">—</span></div>
+    </div>
+
+    <div class="cities-grid" id="citiesGrid">
+      <div class="empty-state" id="emptyState">
+        <div class="icon">🌍</div>
+        <h2>Belum ada kota ditambahkan</h2>
+        <p>Cari nama kota di atas untuk memulai</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
